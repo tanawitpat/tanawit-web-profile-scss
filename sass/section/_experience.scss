@@ -1,0 +1,15 @@
+.section-experience {
+    padding: 10rem;
+    background-color: $color-grey-light;
+
+    display: grid;
+    grid-template-columns: 1fr minmax(30%, 80rem) 1fr;
+
+    &__heading {
+        grid-column: 1 / -1;
+    }
+
+    &__card {
+        grid-column: 2 / 3;
+    }
+}

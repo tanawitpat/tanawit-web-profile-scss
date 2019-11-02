@@ -1,0 +1,21 @@
+.experience-card {
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    padding: 3rem 5rem;
+
+    &__duration {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    &__company-logo {
+        position: absolute;
+        top: 4rem;
+        right: 4rem;    
+    }
+}

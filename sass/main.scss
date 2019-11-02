@@ -1,6 +1,11 @@
 @import "abstracts/variables";
 
+@import "base/animations";
 @import "base/base";
 @import "base/utilities";
+@import "base/typography";
+
+@import "components/experience-card";
 
 @import "section/cover";
+@import "section/experience";

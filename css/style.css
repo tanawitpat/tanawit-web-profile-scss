@@ -1,3 +1,13 @@
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(60px); }
+  80% {
+    transform: translateY(-10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 *,
 *::after,
 *::before {
@@ -17,6 +27,44 @@ body {
 
 .u-center-text {
   text-align: center !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 6rem !important; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7; }
+
+.heading-primary {
+  text-transform: uppercase;
+  color: #144e83;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  text-align: center;
+  animation-name: moveInBottom;
+  animation-duration: .8s;
+  animation-timing-function: ease-out; }
+  .heading-primary:hover {
+    transform: scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.experience-card {
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  border-radius: 20px;
+  padding: 3rem 5rem; }
+  .experience-card__duration {
+    margin-bottom: 10px; }
+    .experience-card__duration:last-child {
+      margin-bottom: 0px; }
+  .experience-card__company-logo {
+    position: absolute;
+    top: 4rem;
+    right: 4rem; }
 
 .section-cover {
   background-image: linear-gradient(105deg, rgba(51, 51, 51, 0.4) 0%, rgba(119, 119, 119, 0.4) 50%, transparent 50%), url(../../img/cover.png);
@@ -39,3 +87,13 @@ body {
       margin-bottom: .6rem; }
     .section-cover__greeting--description {
       font-size: 2rem; }
+
+.section-experience {
+  padding: 10rem;
+  background-color: #f8f8f8;
+  display: grid;
+  grid-template-columns: 1fr minmax(30%, 80rem) 1fr; }
+  .section-experience__heading {
+    grid-column: 1 / -1; }
+  .section-experience__card {
+    grid-column: 2 / 3; }
