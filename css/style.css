@@ -62,7 +62,8 @@ body {
     color: #144e83; }
   .experience-card__company-name {
     font-weight: 700;
-    color: #23520b; }
+    color: #23520b;
+    text-decoration: none; }
   .experience-card__duration {
     margin-bottom: 10px; }
   .experience-card__company-logo {
