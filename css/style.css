@@ -41,7 +41,7 @@ body {
   text-transform: uppercase;
   color: #144e83;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 6px;
   text-align: center;
   animation-name: moveInBottom;
@@ -53,11 +53,16 @@ body {
 
 .experience-card {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   padding: 3rem 5rem; }
   .experience-card:not(:last-child) {
     margin-bottom: 3rem; }
+  .experience-card__position {
+    color: #144e83; }
+  .experience-card__company-name {
+    font-weight: 700;
+    color: #23520b; }
   .experience-card__duration {
     margin-bottom: 10px; }
   .experience-card__company-logo {
