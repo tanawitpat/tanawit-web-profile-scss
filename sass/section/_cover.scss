@@ -4,6 +4,7 @@
         rgba($color-grey-dark-2, .4) 50%,
         transparent 50%), 
         url(../../img/cover.png);
+    background-position: right top;
     background-size: cover;
     height: 95vh;
     padding: 0 5rem;
@@ -15,8 +16,8 @@
 
     @media only screen and (max-width: $bp-large) {
         background-image: linear-gradient(105deg,
-            rgba($color-grey-dark-1, .4) 0%, 
-            rgba($color-grey-dark-2, .4) 100%,
+            rgba($color-grey-dark-1, .2) 0%, 
+            rgba($color-grey-dark-2, .2) 100%,
             transparent 100%),
             url(../../img/cover.png);
         grid-template-columns: 1fr;
@@ -25,5 +26,13 @@
     &__greeting {
         color: #ddd;
         font-size: 2.5rem;
+
+        &--message {
+            margin-bottom: .6rem;
+        }
+
+        &--description {
+            font-size: 2rem;
+        }
     }
 }
