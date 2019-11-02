@@ -1,3 +1,12 @@
+/*
+0-600px:        Medium
+700-900px:      Large
+900+ is where our normal styles apply
+
+$breakpoint argument choices:
+- medium
+- large
+*/
 @keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -56,6 +65,9 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   padding: 3rem 5rem; }
+  @media only screen and (max-width: 43.75em) {
+    .experience-card {
+      padding: 2rem 3rem; } }
   .experience-card:not(:last-child) {
     margin-bottom: 3rem; }
   .experience-card__position {
@@ -70,6 +82,9 @@ body {
     position: absolute;
     top: 4rem;
     right: 4rem; }
+    @media only screen and (max-width: 43.75em) {
+      .experience-card__company-logo {
+        display: none; } }
 
 .bg-video {
   position: absolute;
@@ -95,7 +110,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 56.25em) {
     .section-cover {
       background-image: linear-gradient(105deg, rgba(51, 51, 51, 0.2) 0%, rgba(119, 119, 119, 0.2) 100%, transparent 100%), url(../../img/cover.png);
       grid-template-columns: 1fr; } }
@@ -112,6 +127,9 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: 1fr minmax(30%, 80rem) 1fr; }
+  @media only screen and (max-width: 43.75em) {
+    .section-experience {
+      padding: 10rem 5rem; } }
   .section-experience__heading {
     grid-column: 1 / -1; }
   .section-experience__card {

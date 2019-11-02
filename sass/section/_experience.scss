@@ -5,6 +5,10 @@
     display: grid;
     grid-template-columns: 1fr minmax(30%, 80rem) 1fr;
 
+    @include respond(medium) {
+        padding: 10rem 5rem;
+    }
+
     &__heading {
         grid-column: 1 / -1;
     }
