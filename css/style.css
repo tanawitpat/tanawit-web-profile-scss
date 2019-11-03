@@ -64,7 +64,11 @@ body {
   position: relative;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
-  padding: 3rem 5rem; }
+  padding: 3rem 5rem;
+  transition: all .2s; }
+  .experience-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0.5rem 1rem 1.5rem rgba(0, 0, 0, 0.1); }
   @media only screen and (max-width: 43.75em) {
     .experience-card {
       padding: 2rem 3rem; } }
