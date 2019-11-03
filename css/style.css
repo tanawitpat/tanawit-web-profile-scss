@@ -10,9 +10,9 @@ $breakpoint argument choices:
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(60px); }
+    transform: translateY(40px); }
   80% {
-    transform: translateY(-10px); }
+    transform: translateY(-5px); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -52,10 +52,7 @@ body {
   font-size: 32px;
   font-weight: 800;
   letter-spacing: 6px;
-  text-align: center;
-  animation-name: moveInBottom;
-  animation-duration: .8s;
-  animation-timing-function: ease-out; }
+  text-align: center; }
   .heading-primary:hover {
     transform: scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -69,11 +66,12 @@ body {
   .experience-card:hover {
     transform: scale(1.02);
     box-shadow: 0.5rem 1rem 1.5rem rgba(0, 0, 0, 0.1); }
-  @media only screen and (max-width: 43.75em) {
-    .experience-card {
-      padding: 2rem 3rem; } }
   .experience-card:not(:last-child) {
     margin-bottom: 3rem; }
+  @media only screen and (max-width: 43.75em) {
+    .experience-card {
+      padding: 2rem 3rem;
+      border-radius: 15px; } }
   .experience-card__position {
     color: #144e83; }
   .experience-card__company-name {
@@ -120,7 +118,10 @@ body {
       grid-template-columns: 1fr; } }
   .section-cover__greeting {
     color: #ddd;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    animation-name: moveInBottom;
+    animation-duration: .8s;
+    animation-timing-function: ease-out; }
     .section-cover__greeting--message {
       margin-bottom: .6rem; }
     .section-cover__greeting--description {

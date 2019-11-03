@@ -27,6 +27,10 @@
         color: #ddd;
         font-size: 2.5rem;
 
+        animation-name: moveInBottom;
+        animation-duration: .8s;
+        animation-timing-function: ease-out;
+    
         &--message {
             margin-bottom: .6rem;
         }
