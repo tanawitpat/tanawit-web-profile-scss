@@ -1,0 +1,27 @@
+.section-education {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#fff, 0.8),
+        rgba(#fff, 0.8)),
+        url(../../img/education-bg.jpg);
+    background-position: center 35%;
+    background-size: cover;
+
+    padding: 10rem;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr minmax(30%, 80rem) 1fr;
+
+    @include respond(medium) {
+        padding: 10rem 5rem;
+    }
+
+    &__heading {
+        grid-column: 1 / -1;
+    }
+
+    &__card {
+        grid-column: 2 / 3;
+    }
+}
