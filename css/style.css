@@ -102,6 +102,44 @@ body {
     width: 100%;
     object-fit: cover; }
 
+.education-card {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 3rem 5rem;
+  transition: all .2s; }
+  .education-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0.5rem 1rem 1.5rem rgba(0, 0, 0, 0.1); }
+  @media only screen and (max-width: 43.75em) {
+    .education-card {
+      padding: 2rem 3rem;
+      border-radius: 15px; } }
+  .education-card__position {
+    color: #144e83; }
+  .education-card__university-name {
+    color: #144e83; }
+    .education-card__university-name > * {
+      text-decoration: none;
+      color: #144e83; }
+  .education-card__degree {
+    font-weight: 700;
+    color: #23520b; }
+  .education-card__honors {
+    font-weight: 700;
+    color: #333; }
+  .education-card__duration {
+    margin-bottom: 10px; }
+  .education-card__university-logo {
+    position: absolute;
+    top: 3rem;
+    right: 4rem; }
+    @media only screen and (max-width: 43.75em) {
+      .education-card__university-logo {
+        display: none; } }
+  .education-card__description {
+    margin-left: 3rem; }
+
 .section-cover {
   background-image: linear-gradient(105deg, rgba(16, 29, 44, 0.9) 0%, rgba(16, 29, 44, 0.9) 50%, transparent 50%), url(../../img/cover.png);
   background-position: right top;
@@ -126,6 +164,22 @@ body {
       margin-bottom: .6rem; }
     .section-cover__greeting--description {
       font-size: 2rem; }
+
+.section-education {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../../img/education-bg.jpg);
+  background-position: center 35%;
+  background-size: cover;
+  padding: 10rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr minmax(30%, 80rem) 1fr; }
+  @media only screen and (max-width: 43.75em) {
+    .section-education {
+      padding: 10rem 5rem; } }
+  .section-education__heading {
+    grid-column: 1 / -1; }
+  .section-education__card {
+    grid-column: 2 / 3; }
 
 .section-experience {
   padding: 10rem;
