@@ -40,6 +40,12 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 6rem !important; }
 
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem !important; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -48,7 +54,6 @@ body {
 
 .heading-primary {
   text-transform: uppercase;
-  color: #144e83;
   font-size: 32px;
   font-weight: 800;
   letter-spacing: 6px;
@@ -140,6 +145,35 @@ body {
   .education-card__description {
     margin-left: 3rem; }
 
+.project-card {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 45rem;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem; }
+
+.section-project {
+  padding: 10rem;
+  background-image: linear-gradient(to right bottom, rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url(../../img/bg1.jpg); }
+  @media only screen and (max-width: 43.75em) {
+    .section-project {
+      padding: 10rem 5rem; } }
+  .section-project__heading {
+    color: #fff; }
+  .section-project__quote {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 6rem; }
+  .section-project__card {
+    padding: 0 15rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 10rem; }
+
 .section-cover {
   background-image: linear-gradient(105deg, rgba(16, 29, 44, 0.9) 0%, rgba(16, 29, 44, 0.9) 50%, transparent 50%), url(../../img/cover.png);
   background-position: right top;
@@ -177,6 +211,7 @@ body {
     .section-education {
       padding: 10rem 5rem; } }
   .section-education__heading {
+    color: #144e83;
     grid-column: 1 / -1; }
   .section-education__card {
     grid-column: 2 / 3; }
@@ -190,6 +225,7 @@ body {
     .section-experience {
       padding: 10rem 5rem; } }
   .section-experience__heading {
+    color: #144e83;
     grid-column: 1 / -1; }
   .section-experience__card {
     grid-column: 2 / 3; }

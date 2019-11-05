@@ -1,0 +1,30 @@
+.section-project {
+    padding: 10rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-blue-dark, .9), 
+        rgba($color-blue-dark, .9)), 
+        url(../../img/bg1.jpg);
+
+    @include respond(medium) {
+        padding: 10rem 5rem;
+    }
+
+    &__heading {
+        color: #fff;
+    }
+
+    &__quote {
+        color: #fff;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 6rem;
+    }
+
+    &__card {
+        padding: 0 15rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        grid-gap: 10rem;
+    }
+}
