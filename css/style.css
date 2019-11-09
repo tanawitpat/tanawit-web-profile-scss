@@ -147,16 +147,41 @@ body {
 
 .project-card {
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.8);
-  height: 45rem;
   border-radius: 20px;
   display: grid;
-  grid-template-columns: min-content 1fr;
-  grid-row-gap: 1.5rem;
-  grid-column-gap: 2.5rem; }
+  overflow: hidden; }
+  .project-card__img {
+    width: 100%;
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+    z-index: 1; }
+  .project-card__name {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    z-index: 3;
+    padding: 1rem 0;
+    background-color: rgba(51, 51, 51, 0.4);
+    color: #fff;
+    font-weight: bold; }
+  .project-card__footer {
+    grid-row: 3 / 4; }
+    .project-card__footer--1 {
+      padding: 1rem 0;
+      grid-column: 1 / 2;
+      background-color: #333;
+      transition: all .2s; }
+      .project-card__footer--1:hover {
+        background-color: #222; }
+    .project-card__footer--2 {
+      padding: 1rem 0;
+      grid-column: 2 / 3;
+      background-color: #333;
+      transition: all .2s; }
+      .project-card__footer--2:hover {
+        background-color: #222; }
 
 .section-project {
-  padding: 10rem;
+  padding: 10rem 15rem;
   background-image: linear-gradient(to right bottom, rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url(../../img/bg1.jpg); }
   @media only screen and (max-width: 43.75em) {
     .section-project {
@@ -169,10 +194,26 @@ body {
     font-size: 1.5rem;
     margin-bottom: 6rem; }
   .section-project__card {
-    padding: 0 15rem;
+    margin-bottom: 6rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    grid-gap: 10rem; }
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 5rem; }
+  .section-project__footer {
+    text-align: center; }
+    .section-project__footer button.btn {
+      border: none;
+      color: #101d2c;
+      background-color: rgba(255, 255, 255, 0.8);
+      font-size: 1.8rem;
+      font-weight: 600;
+      padding: 1.8rem 3rem;
+      text-transform: uppercase;
+      transition: transform .2s, background-color .2s, color .2s;
+      cursor: pointer; }
+      .section-project__footer button.btn:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+        color: #fff;
+        transform: scale(1.1); }
 
 .section-cover {
   background-image: linear-gradient(105deg, rgba(16, 29, 44, 0.9) 0%, rgba(16, 29, 44, 0.9) 50%, transparent 50%), url(../../img/cover.png);
