@@ -25,7 +25,7 @@
         margin-bottom: 6rem;
 
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
         grid-gap: 5rem;
     }
 
@@ -36,9 +36,9 @@
             border: none;
             color: $color-blue-dark;
             background-color: rgba(#fff, .8);
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 600;
-            padding: 1.8rem 3rem;
+            padding: 1.5rem 2.5rem;
             text-transform: uppercase;
             transition: transform .2s, background-color .2s, color .2s;
             cursor: pointer;
