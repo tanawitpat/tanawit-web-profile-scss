@@ -166,19 +166,31 @@ body {
   .project-card__footer {
     grid-row: 3 / 4; }
     .project-card__footer--1 {
+      margin-right: .05rem;
       padding: 1rem 0;
       grid-column: 1 / 2;
-      background-color: #333;
-      transition: all .2s; }
-      .project-card__footer--1:hover {
-        background-color: #222; }
+      transition: all .2s;
+      color: #101d2c;
+      background-color: rgba(255, 255, 255, 0.8);
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer; }
+      .project-card__footer--1:hover, .project-card__footer--1:active {
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.05); }
     .project-card__footer--2 {
+      margin-left: .05rem;
       padding: 1rem 0;
       grid-column: 2 / 3;
-      background-color: #333;
-      transition: all .2s; }
-      .project-card__footer--2:hover {
-        background-color: #222; }
+      transition: all .2s;
+      color: #101d2c;
+      background-color: rgba(255, 255, 255, 0.8);
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer; }
+      .project-card__footer--2:hover, .project-card__footer--2:active {
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.05); }
 
 .section-project {
   padding: 10rem 15rem;
@@ -210,7 +222,7 @@ body {
       text-transform: uppercase;
       transition: transform .2s, background-color .2s, color .2s;
       cursor: pointer; }
-      .section-project__footer button.btn:hover {
+      .section-project__footer button.btn:hover, .section-project__footer button.btn:active {
         background-color: rgba(255, 255, 255, 0.05);
         color: #fff;
         transform: scale(1.1); }
