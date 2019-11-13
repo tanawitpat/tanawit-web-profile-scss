@@ -1,1 +1,7 @@
 node_modules
+public
+
+## Firebase
+.firebaserc
+.firebase
+firebase.json
