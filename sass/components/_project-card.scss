@@ -50,6 +50,14 @@
             align-items: center;
             justify-content: center; 
         }
+
+        @include respond(mobile) {
+            display: block;
+            color: $color-blue-dark;
+            background-color: rgba(#fff, .7);
+            grid-row: 4 / 5;
+            padding: 2rem;
+        }
     }
 
     &__footer {
