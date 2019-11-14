@@ -53,5 +53,9 @@
 
     &__description {
         margin-left: 3rem;
+
+        @include respond(small) {
+            margin-left: 2rem;
+        }    
     }
 }

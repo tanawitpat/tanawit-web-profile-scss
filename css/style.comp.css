@@ -27,6 +27,9 @@ $breakpoint argument choices:
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 28.125em) {
+    html {
+      font-size: 50%; } }
 
 body {
   margin: 0;
@@ -54,7 +57,7 @@ body {
 
 .heading-primary {
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 3.5rem;
   font-weight: 800;
   letter-spacing: 6px;
   text-align: center; }
@@ -144,11 +147,15 @@ body {
         display: none; } }
   .education-card__description {
     margin-left: 3rem; }
+    @media only screen and (max-width: 28.125em) {
+      .education-card__description {
+        margin-left: 2rem; } }
 
 .project-card {
   color: #fff;
   border-radius: 20px;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   overflow: hidden; }
   .project-card__name {
     grid-row: 1 / 2;
@@ -174,8 +181,7 @@ body {
     grid-row: 2 / 4;
     grid-column: 1 / 3;
     z-index: 2;
-    display: none;
-    padding: 0 1.5rem; }
+    display: none; }
     .project-card__description:hover {
       color: black;
       background-color: rgba(255, 255, 255, 0.8);
@@ -229,6 +235,9 @@ body {
   @media only screen and (max-width: 43.75em) {
     .section-project {
       padding: 10rem 5rem; } }
+  @media only screen and (max-width: 28.125em) {
+    .section-project {
+      padding: 10rem 3rem; } }
   .section-project__heading {
     color: #fff; }
   .section-project__quote {
@@ -294,6 +303,9 @@ body {
   @media only screen and (max-width: 43.75em) {
     .section-education {
       padding: 10rem 5rem; } }
+  @media only screen and (max-width: 28.125em) {
+    .section-education {
+      padding: 10rem 3rem; } }
   .section-education__heading {
     color: #144e83;
     grid-column: 1 / -1; }
@@ -308,6 +320,9 @@ body {
   @media only screen and (max-width: 43.75em) {
     .section-experience {
       padding: 10rem 5rem; } }
+  @media only screen and (max-width: 28.125em) {
+    .section-experience {
+      padding: 10rem 3rem; } }
   .section-experience__heading {
     color: #144e83;
     grid-column: 1 / -1; }

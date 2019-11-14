@@ -3,6 +3,7 @@
     border-radius: 20px;
 
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     overflow: hidden;
 
     &__name {
@@ -40,7 +41,6 @@
         z-index: 2;
 
         display: none;
-        padding: 0 1.5rem;
 
         &:hover {
             color: black;
