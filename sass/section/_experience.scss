@@ -1,6 +1,13 @@
 .section-experience {
     padding: 10rem;
     position: relative;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-grey-light, .9),
+        rgba(#fff, .9)),
+        url(../../img/experience-bg.jpg);
+    background-position: center 35%;
+    background-size: cover;
 
     display: grid;
     grid-template-columns: 1fr minmax(30%, 80rem) 1fr;
