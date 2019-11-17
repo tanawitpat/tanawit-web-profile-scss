@@ -230,12 +230,14 @@ body {
         margin-left: .05rem; }
 
 .skill-card {
-  margin: 0 1.2rem; }
+  width: 21%;
+  margin-bottom: 3rem; }
   .skill-card img {
     width: 75px;
     height: auto;
     border-radius: 15%;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    background-color: #fff; }
   .skill-card p {
     text-align: center;
     line-height: 1.4; }
@@ -431,7 +433,7 @@ body {
         margin-bottom: 3rem; }
       .section-skills__cards__card--topic {
         text-align: center;
-        margin-bottom: 2rem; }
+        margin-bottom: 3rem; }
       .section-skills__cards__card--content {
         display: flex;
         justify-content: center;
