@@ -231,23 +231,40 @@ body {
         margin-left: .05rem; }
 
 .section-aboutme {
-  background-color: #101d2c;
+  background-color: #ebebeb;
   background-position: right top;
   background-size: cover;
-  padding: 10rem; }
+  padding: 10rem;
+  color: #222;
+  font-size: 1.8rem; }
+  .section-aboutme__heading {
+    color: #144e83; }
   .section-aboutme__content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 60% 40%;
     align-items: center;
     justify-content: center; }
+  .section-aboutme__terminal {
+    margin: 0 5rem;
+    padding: 2rem;
+    color: white;
+    background-color: black; }
+    .section-aboutme__terminal--title {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase; }
   .section-aboutme__description {
-    font-size: 1.8rem;
-    padding: 0 10rem;
-    color: #fff; }
-    .section-aboutme__description--title {
-      font-size: 3rem; }
+    padding: 0 10rem; }
   .section-aboutme__profile {
-    padding-bottom: 1rem; }
+    margin-bottom: .8rem; }
+    .section-aboutme__profile--title {
+      color: #23520b; }
+  .section-aboutme__social-network {
+    margin-top: 2rem; }
+    .section-aboutme__social-network--logo {
+      width: 60px;
+      height: 60px;
+      margin-right: 1rem; }
 
 .section-cover {
   background-image: linear-gradient(105deg, rgba(16, 29, 44, 0.9) 0%, rgba(16, 29, 44, 0.9) 50%, transparent 50%), url(../../img/cover.png);
