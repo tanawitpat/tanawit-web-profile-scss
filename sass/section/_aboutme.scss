@@ -1,0 +1,27 @@
+.section-aboutme {
+    background-color: $color-blue-dark;
+    background-position: right top;
+    background-size: cover;
+    padding: 10rem;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;    
+    }
+
+    &__description {
+        font-size: 1.8rem;
+        padding: 0 10rem;
+        color: #fff;
+
+        &--title {
+            font-size: 3rem;
+        }
+    }
+
+    &__profile {
+        padding-bottom: 1rem;
+    }
+}
