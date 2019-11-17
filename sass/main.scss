@@ -6,12 +6,13 @@
 @import "base/utilities";
 @import "base/typography";
 
-@import "components/experience-card";
 @import "components/bg-video";
 @import "components/education-card";
+@import "components/experience-card";
 @import "components/project-card";
 
-@import "section/project";
+@import "section/aboutme";
 @import "section/cover";
 @import "section/education";
 @import "section/experience";
+@import "section/project";
