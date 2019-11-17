@@ -1,0 +1,35 @@
+.section-skills {
+    padding: 10rem 15rem;
+    position: relative;
+    background-color: rgba($color-blue-dark, .6);
+
+    @include respond(medium) {
+        padding: 10rem 5rem;
+    }
+
+    @include respond(small) {
+        padding: 10rem 3rem;
+    }    
+
+    &__heading {
+        color: #fff;
+    }
+
+    &__cards {
+        color: #fff;
+
+        &--topic {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        &--content {
+            display: flex;
+            justify-content: center; 
+
+            &:not(:last-child) {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
