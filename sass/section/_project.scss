@@ -1,58 +1,57 @@
 .section-project {
-    padding: 10rem 15rem;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-blue-dark, .9), 
-        rgba($color-blue-dark, .9)), 
-        url(../../img/bg1.jpg);
+  padding: 10rem 15rem;
+  background-image: linear-gradient(to right bottom,
+      rgba($color-blue-dark, .9),
+      rgba($color-blue-dark, .9)),
+    url(../../img/bg1.jpg);
 
-    @include respond(medium) {
-        padding: 10rem 5rem;
-    }
+  @include respond(medium) {
+    padding: 10rem 5rem;
+  }
 
-    @include respond(small) {
-        padding: 10rem 3rem;
-    }
+  @include respond(small) {
+    padding: 10rem 3rem;
+  }
 
-    &__heading {
+  &__heading {
+    color: #fff;
+  }
+
+  &__quote {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 6rem;
+  }
+
+  &__card {
+    margin-bottom: 6rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 5rem;
+  }
+
+  &__footer {
+    text-align: center;
+
+    button.btn {
+      border: none;
+      color: $color-blue-dark;
+      background-color: rgba(#fff, .8);
+      font-size: 1.6rem;
+      font-weight: 600;
+      padding: 1.5rem 2.5rem;
+      text-transform: uppercase;
+      transition: transform .2s, background-color .2s, color .2s;
+      cursor: pointer;
+
+      &:hover,
+      &:active {
+        background-color: rgba(#fff, .05);
         color: #fff;
+        transform: scale(1.1);
+      }
     }
-
-    &__quote {
-        color: #fff;
-        text-align: center;
-        font-size: 1.5rem;
-        margin-bottom: 6rem;
-    }
-
-    &__card {
-        margin-bottom: 6rem;
-
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-        grid-gap: 5rem;
-    }
-
-    &__footer {
-        text-align: center;
-
-        button.btn {
-            border: none;
-            color: $color-blue-dark;
-            background-color: rgba(#fff, .8);
-            font-size: 1.6rem;
-            font-weight: 600;
-            padding: 1.5rem 2.5rem;
-            text-transform: uppercase;
-            transition: transform .2s, background-color .2s, color .2s;
-            cursor: pointer;
-
-            &:hover,
-            &:active {
-                background-color: rgba(#fff, .05);
-                color: #fff;
-                transform: scale(1.1);
-            }
-        }
-    }
+  }
 }

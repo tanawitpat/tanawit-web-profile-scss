@@ -1,49 +1,49 @@
 .section-skills {
-    padding: 10rem 15rem;
-    position: relative;
-    background-color: rgba($color-blue-dark, .85);
+  padding: 10rem 15rem;
+  position: relative;
+  background-color: rgba($color-blue-dark, .85);
 
-    @include respond(medium) {
-        padding: 10rem 5rem;
+  @include respond(medium) {
+    padding: 10rem 5rem;
+  }
+
+  @include respond(small) {
+    padding: 10rem 3rem;
+  }
+
+  &__heading {
+    color: #fff;
+  }
+
+  &__cards {
+    color: #fff;
+    max-width: 120rem;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include respond(largest) {
+      grid-template-columns: 1fr;
     }
 
-    @include respond(small) {
-        padding: 10rem 3rem;
-    }    
+    &__card {
+      text-align: center;
 
-    &__heading {
-        color: #fff;
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+
+      &--topic {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      &--content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
     }
-
-    &__cards {
-        color: #fff;
-        max-width: 120rem;
-        margin: 0 auto;
-        
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-        @include respond(largest) {
-            grid-template-columns: 1fr;
-        }
-
-        &__card {
-            text-align: center;
-            
-            &:not(:last-child) {
-                margin-bottom: 3rem;
-            }
-
-            &--topic {
-                text-align: center;
-                margin-bottom: 3rem;
-            }
-    
-            &--content {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-            }    
-        }
-    }
+  }
 }
